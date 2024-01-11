@@ -29,7 +29,7 @@ class BaseModel:
     def save(self):
         """this updates the updated_at with the current datetime"""
         self.updated_at = datetime.today()
-        pass
+        models.storage.save()
     
     
     
